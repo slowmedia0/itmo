@@ -1,0 +1,58 @@
+@startuml
+
+skinparam linetype ortho
+
+class PowerUpPunch
+class PoisonJab
+class BulkUp
+class RockTomb
+class DoubleKick
+class Confide
+class Growl
+class HornLeech
+class Facade
+class PlayNice
+class FocusBlast
+
+class Move
+class PhysicalMove
+class SpecialMove
+class StatusMove
+class Pokemon
+class DamageMove
+
+class Pheromosa
+class Deerling
+class Sawsbuck
+class Pichu
+class Pikachu
+class Raichu
+
+class LabaProga
+
+Move ^-- DamageMove
+Move ^-- StatusMove
+DamageMove ^-- PhysicalMove
+DamageMove ^-- SpecialMove
+PhysicalMove ^-- DoubleKick
+PhysicalMove ^-- Facade
+PhysicalMove ^-- HornLeech
+PhysicalMove ^-- PoisonJab
+PhysicalMove ^-- PowerUpPunch
+PhysicalMove ^-- RockTomb
+SpecialMove ^-- FocusBlast
+StatusMove ^-- BulkUp
+StatusMove ^-- Confide
+StatusMove ^-- Growl
+StatusMove ^-- PlayNice
+
+Pokemon ^-- Deerling
+Pokemon ^-- Pheromosa
+Pokemon ^-- Pichu
+Pokemon ^-- Raichu
+Pokemon ^-- Pikachu
+Pokemon ^-- Sawsbuck
+Deerling ^-- Sawsbuck
+Pichu ^-- Pikachu
+Pikachu ^-- Raichu
+@enduml
