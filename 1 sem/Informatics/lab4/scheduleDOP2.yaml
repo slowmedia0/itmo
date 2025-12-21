@@ -1,0 +1,173 @@
+struct: Schedule
+fields:
+  days:
+    Wednesday:
+    - struct: Lesson1
+      fields:
+        time: !!python/tuple
+        - '11:30'
+        - '13:00'
+        subject: ИНФОРМАТИКА
+        type: ЛЕК
+        room_number: 1216/0 (усл)
+        room_type: АКТОВЫЙ ЗАЛ
+        room_place: ауд.ул.Ломоносова, д.9, лит. М
+        teacher: Балакшин Павел Валерьевич
+        group: ИНФОРМ КСиТ 2
+        weeks:
+        - 2
+        - 4
+        - 6
+        - 8
+        - 10
+        - 16
+        format: Очно - дистанционный
+    - struct: Lesson2
+      fields:
+        time: !!python/tuple
+        - '11:30'
+        - '13:00'
+        subject: ИНФОРМАТИКА
+        type: ЛЕК
+        room_number: 1216/0 (усл)
+        room_type: АКТОВЫЙ ЗАЛ
+        room_place: ауд.ул.Ломоносова, д.9, лит. М
+        teacher: Балакшин Павел Валерьевич
+        group: ИНФОРМ СиППО 1
+        weeks:
+        - 2
+        - 4
+        - 6
+        - 8
+        - 10
+        - 16
+        format: Очно - дистанционный
+    Saturday:
+    - struct: Lesson1
+      fields:
+        time: !!python/tuple
+        - '8:10'
+        - '9:40'
+        subject: PARALLEL COMPUTING / ПАРАЛЛЕЛЬНЫЕ ВЫЧИСЛЕНИЯ
+        type: ЛЕК
+        room_number: 1333
+        room_type: ''
+        room_place: ауд.Кронверкский пр., д.49, лит.А
+        teacher: Балакшин Павел Валерьевич
+        group: PRLCOMP 1
+        weeks:
+        - 6
+        - 7
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        format: Очно - дистанционный
+    - struct: Lesson2
+      fields:
+        time: !!python/tuple
+        - '9:50'
+        - '11:20'
+        subject: PARALLEL COMPUTING / ПАРАЛЛЕЛЬНЫЕ ВЫЧИСЛЕНИЯ
+        type: ЛАБ
+        room_number: 1333
+        room_type: ''
+        room_place: ауд.Кронверкский пр., д.49, лит.А
+        teacher: Балакшин Павел Валерьевич
+        group: PRLCOMP 1.1
+        weeks:
+        - 6
+        - 7
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        format: Очно - дистанционный
+    - struct: Lesson3
+      fields:
+        time: !!python/tuple
+        - '11:30'
+        - '13:00'
+        subject: ИНФОРМАТИКА
+        type: ЛАБ
+        room_number: 1333
+        room_type: ''
+        room_place: ауд.Кронверкский пр., д.49, лит.А
+        teacher: Балакшин Павел Валерьевич
+        group: ИНФОРМ (Р3106) 1.1
+        weeks:
+        - 2
+        - 4
+        - 6
+        - 8
+        - 10
+        - 12
+        - 14
+        format: Очно - дистанционный
+    - struct: Lesson4
+      fields:
+        time: !!python/tuple
+        - '11:30'
+        - '13:00'
+        subject: ИНФОРМАТИКА
+        type: ЛАБ
+        room_number: 1333
+        room_type: ''
+        room_place: ауд.Кронверкский пр., д.49, лит.А
+        teacher: Балакшин Павел Валерьевич
+        group: ИНФОРМ (Р3107) 1.2
+        weeks:
+        - 3
+        - 5
+        - 7
+        - 9
+        - 11
+        - 13
+        - 15
+        format: Очно - дистанционный
+    - struct: Lesson5
+      fields:
+        time: !!python/tuple
+        - '13:30'
+        - '15:00'
+        subject: ИНФОРМАТИКА
+        type: ЛАБ
+        room_number: 1333
+        room_type: ''
+        room_place: ауд.Кронверкский пр., д.49, лит.А
+        teacher: Балакшин Павел Валерьевич
+        group: ИНФОРМ (Р3106) 1.1
+        weeks:
+        - 2
+        - 4
+        - 6
+        - 8
+        - 10
+        - 12
+        - 14
+        format: Очно - дистанционный
+    - struct: Lesson6
+      fields:
+        time: !!python/tuple
+        - '13:30'
+        - '15:00'
+        subject: ИНФОРМАТИКА
+        type: ЛАБ
+        room_number: 1333
+        room_type: ''
+        room_place: ауд.Кронверкский пр., д.49, лит.А
+        teacher: Балакшин Павел Валерьевич
+        group: ИНФОРМ (Р3107) 1.2
+        weeks:
+        - 3
+        - 5
+        - 7
+        - 9
+        - 11
+        - 13
+        - 15
+        format: Очно - дистанционный

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <Wednesday>
+      <Lesson1>
+        <time>
+          <item>11:30</item>
+          <item>13:00</item>
+        </time>
+        <subject>ИНФОРМАТИКА</subject>
+        <type>ЛЕК</type>
+        <room_number>1216/0 (усл)</room_number>
+        <room_type>АКТОВЫЙ ЗАЛ</room_type>
+        <room_place>ауд.ул.Ломоносова, д.9, лит. М</room_place>
+        <teacher>Балакшин Павел Валерьевич</teacher>
+        <group>ИНФОРМ КСиТ 2</group>
+        <weeks>
+          <item>2</item>
+          <item>4</item>
+          <item>6</item>
+          <item>8</item>
+          <item>10</item>
+          <item>16</item>
+        </weeks>
+        <format>Очно - дистанционный</format>
+      </Lesson1>
+      <Lesson2>
+        <time>
+          <item>11:30</item>
+          <item>13:00</item>
+        </time>
+        <subject>ИНФОРМАТИКА</subject>
+        <type>ЛЕК</type>
+        <room_number>1216/0 (усл)</room_number>
+        <room_type>АКТОВЫЙ ЗАЛ</room_type>
+        <room_place>ауд.ул.Ломоносова, д.9, лит. М</room_place>
+        <teacher>Балакшин Павел Валерьевич</teacher>
+        <group>ИНФОРМ СиППО 1</group>
+        <weeks>
+          <item>2</item>
+          <item>4</item>
+          <item>6</item>
+          <item>8</item>
+          <item>10</item>
+          <item>16</item>
+        </weeks>
+        <format>Очно - дистанционный</format>
+      </Lesson2>
+    </Wednesday>
+    <Saturday>
+      <Lesson1>
+        <time>
+          <item>8:10</item>
+          <item>9:40</item>
+        </time>
+        <subject>PARALLEL COMPUTING / ПАРАЛЛЕЛЬНЫЕ ВЫЧИСЛЕНИЯ</subject>
+        <type>ЛЕК</type>
+        <room_number>1333</room_number>
+        <room_type></room_type>
+        <room_place>ауд.Кронверкский пр., д.49, лит.А</room_place>
+        <teacher>Балакшин Павел Валерьевич</teacher>
+        <group>PRLCOMP 1</group>
+        <weeks>
+          <item>6</item>
+          <item>7</item>
+          <item>10</item>
+          <item>11</item>
+          <item>12</item>
+          <item>13</item>
+          <item>14</item>
+          <item>15</item>
+        </weeks>
+        <format>Очно - дистанционный</format>
+      </Lesson1>
+      <Lesson2>
+        <time>
+          <item>9:50</item>
+          <item>11:20</item>
+        </time>
+        <subject>PARALLEL COMPUTING / ПАРАЛЛЕЛЬНЫЕ ВЫЧИСЛЕНИЯ</subject>
+        <type>ЛАБ</type>
+        <room_number>1333</room_number>
+        <room_type></room_type>
+        <room_place>ауд.Кронверкский пр., д.49, лит.А</room_place>
+        <teacher>Балакшин Павел Валерьевич</teacher>
+        <group>PRLCOMP 1.1</group>
+        <weeks>
+          <item>6</item>
+          <item>7</item>
+          <item>10</item>
+          <item>11</item>
+          <item>12</item>
+          <item>13</item>
+          <item>14</item>
+          <item>15</item>
+        </weeks>
+        <format>Очно - дистанционный</format>
+      </Lesson2>
+      <Lesson3>
+        <time>
+          <item>11:30</item>
+          <item>13:00</item>
+        </time>
+        <subject>ИНФОРМАТИКА</subject>
+        <type>ЛАБ</type>
+        <room_number>1333</room_number>
+        <room_type></room_type>
+        <room_place>ауд.Кронверкский пр., д.49, лит.А</room_place>
+        <teacher>Балакшин Павел Валерьевич</teacher>
+        <group>ИНФОРМ (Р3106) 1.1</group>
+        <weeks>
+          <item>2</item>
+          <item>4</item>
+          <item>6</item>
+          <item>8</item>
+          <item>10</item>
+          <item>12</item>
+          <item>14</item>
+        </weeks>
+        <format>Очно - дистанционный</format>
+      </Lesson3>
+      <Lesson4>
+        <time>
+          <item>11:30</item>
+          <item>13:00</item>
+        </time>
+        <subject>ИНФОРМАТИКА</subject>
+        <type>ЛАБ</type>
+        <room_number>1333</room_number>
+        <room_type></room_type>
+        <room_place>ауд.Кронверкский пр., д.49, лит.А</room_place>
+        <teacher>Балакшин Павел Валерьевич</teacher>
+        <group>ИНФОРМ (Р3107) 1.2</group>
+        <weeks>
+          <item>3</item>
+          <item>5</item>
+          <item>7</item>
+          <item>9</item>
+          <item>11</item>
+          <item>13</item>
+          <item>15</item>
+        </weeks>
+        <format>Очно - дистанционный</format>
+      </Lesson4>
+      <Lesson5>
+        <time>
+          <item>13:30</item>
+          <item>15:00</item>
+        </time>
+        <subject>ИНФОРМАТИКА</subject>
+        <type>ЛАБ</type>
+        <room_number>1333</room_number>
+        <room_type></room_type>
+        <room_place>ауд.Кронверкский пр., д.49, лит.А</room_place>
+        <teacher>Балакшин Павел Валерьевич</teacher>
+        <group>ИНФОРМ (Р3106) 1.1</group>
+        <weeks>
+          <item>2</item>
+          <item>4</item>
+          <item>6</item>
+          <item>8</item>
+          <item>10</item>
+          <item>12</item>
+          <item>14</item>
+        </weeks>
+        <format>Очно - дистанционный</format>
+      </Lesson5>
+      <Lesson6>
+        <time>
+          <item>13:30</item>
+          <item>15:00</item>
+        </time>
+        <subject>ИНФОРМАТИКА</subject>
+        <type>ЛАБ</type>
+        <room_number>1333</room_number>
+        <room_type></room_type>
+        <room_place>ауд.Кронверкский пр., д.49, лит.А</room_place>
+        <teacher>Балакшин Павел Валерьевич</teacher>
+        <group>ИНФОРМ (Р3107) 1.2</group>
+        <weeks>
+          <item>3</item>
+          <item>5</item>
+          <item>7</item>
+          <item>9</item>
+          <item>11</item>
+          <item>13</item>
+          <item>15</item>
+        </weeks>
+        <format>Очно - дистанционный</format>
+      </Lesson6>
+    </Saturday>
+</Root>
