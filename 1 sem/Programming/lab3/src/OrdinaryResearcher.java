@@ -1,5 +1,5 @@
 class OrdinaryResearcher extends Researcher {
-    private final String[] funReactToSpecimen = {"Интересный образец...","Невероятно!","Получилось!"};
+    private final String[] funReactToSpecimen = {"Интересный образец","Невероятно!","Получилось!"};
     private final String[] sadReactToSpecimen = {"Не получилось...","В другой раз","Это печально"};
     public OrdinaryResearcher(String name) {
         super(name);

@@ -7,7 +7,7 @@ abstract class Researcher implements Base {
     protected final String name;
     protected final boolean knowsNecronomicon;
     protected boolean isTraitor = false;
-    protected double ambition;
+    protected int ambition;
     protected final Random rand = new Random();
 
     protected Researcher(String name) {
@@ -19,9 +19,9 @@ abstract class Researcher implements Base {
     public String getName() { return name; }
     public boolean knowsNecronomicon() { return knowsNecronomicon; }
     public boolean getIsTraitor() { return isTraitor; }
-    public double getAmbition() { return ambition; }
+    public int getAmbition() { return ambition; }
 
-    public void increaseAmbition(double amount) {
+    public void increaseAmbition(int amount) {
         this.ambition = Math.min(100, this.ambition + amount);
     }
     public void becomeTraitor() {
@@ -72,6 +72,6 @@ abstract class Researcher implements Base {
 
     @Override
     public String toString() {
-        return name + (knowsNecronomicon ? "[Know]" : "") + (isTraitor ? "[Traitor]" : "") + "[" + ambition*100 + "%]";
+        return name + (knowsNecronomicon ? "[Know]" : "") + (isTraitor ? "[Traitor]" : "") + "[" + ambition + "%]";
     }
 }

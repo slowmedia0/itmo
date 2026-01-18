@@ -10,11 +10,12 @@ class Expedition {
     private final Random rand = new Random();
     private int collectedCount = 0;
     private boolean betrayalOccurred = false;
-    private final int n = 1 + rand.nextInt(25);
+    private final int n = 1 + rand.nextInt(20);
 
     public Expedition() {
         researchers.add(new OrdinaryResearcher("Дайер"));
         researchers.add(new OrdinaryResearcher("Пэбоди"));
+
         researchers.add(new Storyteller("Рассказчик", researchers));
 
         dogs.add(new Dog("Рекс"));
@@ -43,7 +44,7 @@ class Expedition {
         System.out.println("\nСобрано особей: " + collectedCount + " из " + n);
         System.out.println("Главное — уберечь их от собак!");
         if (collectedCount > 0) {
-            ((Storyteller)researchers.get(2)).triggerFlashbacks(collectedCount);
+            ((Storyteller)researchers.getLast()).triggerFlashbacks(collectedCount);
             checkForPotentialBetrayal();
         } else {
             System.out.println("\nНе удалось извлечь ни одного артефакта!");

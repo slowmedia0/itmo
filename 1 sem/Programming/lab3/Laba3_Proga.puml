@@ -1,0 +1,145 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+
+' --------------------------------------------------
+
+abstract class Researcher {
+  - String name
+  - boolean knowsNecronomicon
+  - boolean isTraitor
+  - int ambition
+  - Random rand
+  + getName() : String
+  + knowsNecronomicon() : boolean
+  + getIsTraitor() : boolean
+  + getAmbition() : int
+  + increaseAmbition(amount: int)
+  + becomeTraitor()
+  + attemptToSteal(specimens: List<Specimen>)
+  + reactToSpecimen(s: Specimen) : String {abstract}
+  .. реализует ..
+  + understandsElderThings() : boolean {abstract}
+}
+
+interface Base {
+  + becomeTraitor()
+  + understandsElderThings() : boolean
+}
+
+class OrdinaryResearcher {
+  + reactToSpecimen(s: Specimen) : String
+  + understandsElderThings() : boolean
+}
+
+class Storyteller {
+  - List<OrdinaryResearcher> team
+  + triggerFlashbacks(collectedSpecimens: int)
+}
+
+Researcher <|-- OrdinaryResearcher
+Researcher <|-- Storyteller
+OrdinaryResearcher -up-|> Base
+Storyteller -up-|> OrdinaryResearcher
+
+' --------------------------------------------------
+
+class Specimen {
+  - String name
+  - DiscoveryContext context
+  - boolean isCollected
+  - boolean isStolen
+  - boolean isDamaged
+  - Random rand
+  + tryToCollect() : boolean
+  + damageByDog() : boolean
+  + getName() : String
+  + getIsCollected() : boolean
+  + getIsStolen() : boolean
+  + getIsDamaged() : boolean
+  + getPeriod() : GeologicalPeriod
+  + setIsStolen(stolen: boolean)
+}
+
+enum GeologicalPeriod {
+  LATE_CRETACEOUS
+  EARLY_EOCENE
+}
+
+record DiscoveryContext {
+  + GeologicalPeriod period
+  + double preservationFactor
+}
+
+Specimen *-- "1" DiscoveryContext
+DiscoveryContext --> GeologicalPeriod
+
+' --------------------------------------------------
+
+class Dog {
+  - String name
+  - boolean isUnderControl
+  - Random rand
+  + reactToSpecimens(specimens: List<Specimen>)
+  + tryToBreakFree() : boolean
+  + damageSpecimens(specimens: List<Specimen>)
+}
+
+' --------------------------------------------------
+
+class Expedition {
+  - List<OrdinaryResearcher> researchers
+  - List<Specimen> specimens
+  - List<Dog> dogs
+  - Cave cave
+  - Random rand
+  - int collectedCount
+  - boolean betrayalOccurred
+  + discoverAndCollect()
+  + handleDogControl()
+  + handleBetrayal()
+  + prepareForExit() throws ExpeditionException
+  + attemptExit() : boolean
+  + finalizeExpedition(success: boolean)
+}
+
+Expedition o--> "many" OrdinaryResearcher
+Expedition o--> "many" Specimen
+Expedition o--> "many" Dog
+Expedition *--> "1" Cave
+
+' --------------------------------------------------
+
+class Cave {
+  - boolean mainExitBlocked
+  - boolean alternativeExitFound
+  - Random rand
+  + checkForCollapse() : boolean
+  + handleCollapse() : boolean
+  + canExit() : boolean
+  + hasAlternativeExit() : boolean
+}
+
+' --------------------------------------------------
+
+class ExpeditionException {
+  + ExpeditionException(message: String)
+  + getMessage() : String
+}
+
+ExpeditionException -up-|> Exception
+
+' --------------------------------------------------
+
+Storyteller --> "many" OrdinaryResearcher : knows team
+
+note top of Researcher
+  Абстрактный базовый класс
+  для всех участников экспедиции
+end note
+
+
+
+@enduml
